@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load bootstrap_form from bootstrap4 %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Email Verified" context "Verify Email page title" %} — {{ block.super }}{% endblock %}
+
+{% block meta_tags %}
+  <meta name="robots" content="nofollow">
+{% endblock meta_tags %}
+
+{% block content %}
+<div class="row login__forgot-password">
+  <div class="col-md-8 m-auto text-center">
+    <div class="login__forgot-password">
+      <h2>{% trans "Email Verified" context "" %}</h2>
+      <img style="padding-top: 2rem;" class="signup-img lazyload lazypreload" data-src="{% static 'images/login-bg.png' %}"
+        srcset="{% static 'images/login-bg.png' %} 1x, {% static 'images/login-bg2x.png' %} 2x">
+      <p>Your email has been successfully verified. Now, you can login to your account with verified email.</p>
+      <a href="{% url 'account:login' %}" type="submit" style="font-weight:500;" class="btn btn-outline-success btn-lg">{% trans 'Login' context '' %}</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load bootstrap_form from bootstrap4 %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Verify Email" context "Verify Email page title" %} — {{ block.super }}{% endblock %}
+
+{% block meta_tags %}
+  <meta name="robots" content="nofollow">
+{% endblock meta_tags %}
+
+{% block content %}
+<div class="row login__forgot-password">
+  <div class="col-md-8 m-auto text-center">
+    <div class="login__forgot-password">
+      <h2>{% trans "Verify Email Address" context "Verify Email form secondary title" %}</h2>
+      <div class="row login__btn-group">
+        <img class="lazyload lazypreload" data-src="{% static 'images/reset-bg.png' %}"/>
+      </div>
+      <p>Confirm your email by clicking the verification link we sent to your inbox.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

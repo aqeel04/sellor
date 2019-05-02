@@ -1,0 +1,19 @@
+{% load i18n %}
+
+{% block subject %}
+  {% trans "Verify Email Address" context "" %}
+{% endblock %}
+
+{% block plain %}
+{% include 'templated_email/shared/_header.email' %}
+
+
+{% block html %}
+  <p>You're receiving this email to verify your email address {{ domain }}.</p>
+  <p>Click the link below to verify your email.</p>
+  <a class="btn btn-primary narrow" style="font-weight:500;" href="{{ conf_url }}">Verify Now</a>
+{% endblock %}
+
+{% include 'templated_email/shared/_footer.email' %}
+{% endblock %}
+
