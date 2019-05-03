@@ -27,7 +27,7 @@ coverage/
 dist/
 *\.egg*
 # data
-#/docs/_build/
+/docs/_build/
 /media/
 /node_modules/
 #/static/
