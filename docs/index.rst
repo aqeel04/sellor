@@ -11,8 +11,3 @@ Sellor
    architecture
    deployment
    guides
-   
-   customization
-   payment-gateways
-   contributing
-   integrations
