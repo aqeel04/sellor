@@ -538,3 +538,29 @@ You can then start your local server and visit ``http://localhost:8000/dashboard
 
 Please note that creating users in this way gives them "superuser" status which means they have all privileges no matter which permissions they have granted.
 
+
+Debug tools
+===========
+
+We have built in support for some of the debug tools.
+
+Django debug toolbar
+--------------------
+
+`Django Debug Toolbar <https://github.com/jazzband/django-debug-toolbar>`_ is turned on if Django is running in debug mode.
+
+Silk
+----
+
+Silk's presence can be controled via environmental variable
+
+``ENABLE_SILK``
+  Controls `django-silk <https://github.com/jazzband/django-silk>`_. Defaults to ``False``
+
+#. Set environment variable.
+
+   .. code-block:: console
+
+    $ export ENABLE_SILK='True'
+
+#. Restart server
