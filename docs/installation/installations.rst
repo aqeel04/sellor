@@ -134,28 +134,6 @@ Installation
 
        This command will need to be able to create database extensions. If you get an error related to the ``CREATE EXTENSION`` command please review the notes from the user creation step.
 
-#. Install front-end dependencies:
-
-   .. code-block:: console
-
-    $ npm install
-
-   .. note::
-
-       If this step fails go back and make sure you're using new enough version of Node.js.
-
-#. Prepare front-end assets:
-
-   .. code-block:: console
-
-    $ npm run build-assets
-
-#. Compile e-mails:
-
-   .. code-block:: console
-
-    $ npm run build-emails
-
 #. Start the development server:
 
    .. code-block:: console
