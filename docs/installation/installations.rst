@@ -7,8 +7,8 @@ Prerequisites
 Before you are ready to run Sellor you will need additional software installed on your computer.
 
 
-#. PostgreSQL
-^^^^^^^^^^^^^
+3.1.1.1 PostgreSQL
+^^^^^^^^^^^^^^^^^^
 
 Sellor needs PostgreSQL version 9.4 or above to work. Get the macOS installer from the `PostgreSQL download page <https://www.postgresql.org/download/macosx/>`_.
 
