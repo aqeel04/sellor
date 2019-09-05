@@ -4,10 +4,4 @@ Getting Started
 .. toctree::
    :maxdepth: 1
 
-   gettingstarted/installation-macos
-   gettingstarted/installation-windows
-   gettingstarted/installation-linux
-   gettingstarted/configuration
-   gettingstarted/superuser
-   gettingstarted/dev-tools
-   gettingstarted/example-data
+   installation/installations
