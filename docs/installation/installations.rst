@@ -523,7 +523,7 @@ Environment variables
   created and available at the appropriate URL.
   
   
-  Creating an Administrator Account
+Creating an Administrator Account
 =================================
 
 Sellor is a Django application so you can create your master account using the following command:
