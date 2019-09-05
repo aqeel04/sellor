@@ -111,12 +111,6 @@ Payment integration
 Collect payments using global payment providers like PayPal or Braintree.
 
 
-Taxes
-^^^^^
-
-Automatically show gross prices to your customers with Vatlayer.
-
-
 Discounts & Promotions
 ^^^^^^^^^^^^^^^^^^^^^^
 
