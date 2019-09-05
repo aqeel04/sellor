@@ -89,13 +89,20 @@ The administrator plays a vital role in the online shopping system. The administ
 #. An Admin has some extra privilege including all privilege of visitor and user. Admin can add, edit and remove products and its categories. Admin can also add, edit and remove user and its information for operators to operate the application. Admin can also ship order to customer based on order placed.
 
 
-Tools and Technologies
-----------------------
+Technologies
+------------
 
-- Python
-- Django
-- PostgreSQL
+
+Tools and Technologies
+^^^^^^^^^^^^^^^^^^^^^^
+
+- Python 3.6
+- Django 2.1
+- PostgreSQL 9.4
 - Javascript
+- Bash Shell(Linux Terminal)
+- DOS(CMD on Windows)
+- Visual Studio Code(IDE)
 - Bootstrap
 - Ajax
 - JQuery
