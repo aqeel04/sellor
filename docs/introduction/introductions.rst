@@ -109,3 +109,9 @@ Tools and Technologies
 - HTML5
 - CSS3
 
+
+Operating Systems
+^^^^^^^^^^^^^^^^^
+
+- Red Hat Enterprise Linux 7.6
+- Windows 10
