@@ -1,2 +1,0 @@
-.. _money_architecture:
-
