@@ -8,12 +8,12 @@ Before you are ready to run Sellor you will need additional software installed o
 
 
 PostgreSQL
-^^^^^^^^^^
+""""""""""
 
 Sellor needs PostgreSQL version 9.4 or above to work. Get the macOS installer from the `PostgreSQL download page <https://www.postgresql.org/download/macosx/>`_.
 
 Command Line Tools for Xcode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""
 
 Download and install the latest version of "Command Line Tools (macOS 10.x) for Xcode 9.x" from the `Downloads for Apple Developers page <https://developer.apple.com/download/more/>`_.
 
@@ -25,7 +25,7 @@ Then run:
 
 
 Homebrew
-^^^^^^^^
+""""""""
 
 Run the following command:
 
@@ -35,7 +35,7 @@ Run the following command:
 
 
 Python 3
-^^^^^^^^
+""""""""
 
 Use Homebrew to install the latest version of Python 3:
 
@@ -45,7 +45,7 @@ Use Homebrew to install the latest version of Python 3:
 
 
 Git
-^^^
+"""
 
 Use Homebrew to install Git:
 
@@ -55,7 +55,7 @@ Use Homebrew to install Git:
 
 
 Gtk+
-^^^^
+""""
 
 Use Homebrew to install the graphical libraries necessary for PDF creation:
 
