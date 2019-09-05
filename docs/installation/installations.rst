@@ -1,4 +1,4 @@
-Installation for macOS
+Installation for MacOS
 ======================
 
 Prerequisites
