@@ -123,8 +123,7 @@ Example: Coffee
 Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 250g packages. Orders are shipped by couriers. 
 
 .. table:: Attributes
-   :caption: this
-   :name: this
+   :name: this-attributes
 
    =================  ===========
    Attribute          Values
