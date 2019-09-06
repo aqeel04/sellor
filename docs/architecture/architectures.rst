@@ -562,6 +562,13 @@ This gateway implements payments using `Stripe <https://stripe.com/>`_.
    ``STRIPE_SHIPPING_ADDRESS``         Collect the user's shipping address in the checkout form if set to ``True``.
    ==================================  =====================================================================================
 
+The default configuration only uses the dummy backend (see `how to enable/disable payment gateways`). It’s meant to allow developers to easily simulate different payment results.
+
+For an how-to guide on adding new payments into your Saleor project please check `Payments`.
+
+
+.. note:: All payment backends default to using sandbox mode. This is very useful for development but make sure you use production mode when deploying to a production server.
+
 
 Authorization and Capture
 -------------------------
