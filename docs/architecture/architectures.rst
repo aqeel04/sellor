@@ -546,7 +546,7 @@ This gateway implements payments using `Braintree <https://www.braintreepayments
 This gateway implements payments using `Stripe <https://stripe.com/>`_.
 
 .. table:: Stripe Environment variables
-   :widths: 45 55
+   :widths: 35 65
 
    ==================================  =====================================================================================
    Environment variable                Description
@@ -558,8 +558,8 @@ This gateway implements payments using `Stripe <https://stripe.com/>`_.
    ``STRIPE_PREFILL``                  Prefill the email adddress in the checkout form if set to ``True`` (default)
    ``STRIPE_REMEMBER_ME``              For future purchases in the checkout form if set to ``True`` (default)
    ``STRIPE_LOCALE``                   Specify ``auto`` to display checkout form in the user's preferred language (default)
-   ``STRIPE_ENABLE_BILLING_ADDRESS``   Collect the user's billing address in the checkout form if set to ``True``.
-   ``STRIPE_ENABLE_SHIPPING_ADDRESS``  Collect the user's shipping address in the checkout form if set to ``True``.
+   ``STRIPE_BILLING_ADDRESS``          Collect the user's billing address in the checkout form if set to ``True``.
+   ``STRIPE_SHIPPING_ADDRESS``         Collect the user's shipping address in the checkout form if set to ``True``.
    ==================================  =====================================================================================
 
 
