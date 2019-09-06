@@ -257,3 +257,43 @@ Decreasing Stock After Shipment
 Once order lines are marked as shipped, each corresponding stock record will have both its quantity at hand and quantity allocated decreased by the number of items shipped.
 
 **Example:** Two boxes of shoes from warehouse A are shipped to a customer. The stock records **quantity** is now **3**, **quantity allocated** becomes **2** and **quantity available** stays at **1**.
+
+
+Order Management
+================
+
+Orders are created after customers complete the checkout process. The `Order` object itself contains only general information about the customer's order.
+
+
+Fulfillment
+-----------
+
+The fulfillment represents a group of shipped items with corresponding tracking number. Fulfillments are created by a shop operator to mark selected products in an order as fulfilled.
+
+There are two possible fulfillment statuses:
+
+- ``NEW``
+    The default status of newly created fulfillments.
+
+- ``CANCELED``
+    The fulfillment canceled by a shop operator. This action is irreversible.
+
+
+Order statuses
+--------------
+
+There are four possible order statuses, based on statuses of its fulfillments:
+
+- ``UNFULFILLED``
+    There are no fulfillments related to an order or each one is canceled. An action by a shop operator is required to continue order processing.
+
+- ``PARTIALLY FULFILLED``
+    There are some fulfillments with ``FULFILLED`` status related to an order. An action by a shop operator is required to continue order processing.
+
+- ``FULFILLED``
+    Each order line is fulfilled in existing fulfillments. Order doesn't require further actions by a shop operator.
+
+- ``CANCELED``
+    Order has been canceled. Every fulfillment (if there is any) has ``CANCELED`` status. Order doesn't require further actions by a shop operator.
+
+There is also ``DRAFT`` status, used for orders newly created from dashboard and not yet published.
