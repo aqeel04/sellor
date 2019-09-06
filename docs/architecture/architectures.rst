@@ -45,6 +45,7 @@ Product Structure
 
 Before filling your shop with products we need to introduce 3 product concepts - *product types*, *products*, *product variants*.
 
+
 Overview
 --------
 
@@ -54,15 +55,12 @@ The book is available in hard and soft cover, so there would be 2 *product varia
 
 Type of cover is the only attribute which creates separate variants in our store, so we use *product type* named "Book" with variants enabled and a "Cover type" *variant attribute*.
 
-Class Diagram
--------------
-
-.. image:: ../img/product_class_tree.png
 
 Product Variants
 ----------------
 
 Variants are the most important objects in your shop. All cart and stock operations use variants. Even if a product doesn't have multiple variants, the store will create one under the hood.
+
 
 Products
 --------
@@ -153,6 +151,7 @@ Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 2
    ============  ================  =================  =================================
 
 .. table:: Variants
+   :width: 100%
 
    ====  ============  ==============
    SKU   Package size  Price override
