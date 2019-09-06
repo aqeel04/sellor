@@ -553,8 +553,8 @@ This gateway implements payments using `Stripe <https://stripe.com/>`_.
    ==================================  =====================================================================================
    ``STRIPE_PUBLIC_KEY``               Your Stripe public key (test or live)
    ``STRIPE_SECRET_KEY``               Your Stripe secret key (test or live)
-   ``STRIPE_STORE_NAME``               Your store name to show in the checkout form
-   ``STRIPE_STORE_IMAGE``              An absolute or relative link of your store logo to show in the checkout form
+   ``STRIPE_STORE_NAME``               Your store name to show in the checkout form.
+   ``STRIPE_STORE_IMAGE``              An absolute or relative link of your store logo.
    ``STRIPE_PREFILL``                  Prefill the email adddress in the checkout form if set to ``True`` (default)
    ``STRIPE_REMEMBER_ME``              For future purchases in the checkout form if set to ``True`` (default)
    ``STRIPE_LOCALE``                   Specify ``auto`` to display checkout form in the user's preferred language (default)
@@ -564,7 +564,7 @@ This gateway implements payments using `Stripe <https://stripe.com/>`_.
 
 The default configuration only uses the dummy backend (see `how to enable/disable payment gateways`). It’s meant to allow developers to easily simulate different payment results.
 
-For an how-to guide on adding new payments into your Saleor project please check `Payments`.
+For an how-to guide on adding new payments into your Sellor project please check `Payments`.
 
 
 .. note:: All payment backends default to using sandbox mode. This is very useful for development but make sure you use production mode when deploying to a production server.
