@@ -371,7 +371,7 @@ Sellor uses ``gettext`` for translation. This is an industry standard for transl
 
 Sellor's storefront and dashboard are both prepared for translation. They use separate translation domains and can be translated separately. All translations provide accurate context descriptions to make translation an easier task.
 
-It is possible to translate database content (like product descriptions) with Sellor, more on it can be found in the :ref:`model-translations` section.
+It is possible to translate database content (like product descriptions) with Sellor, more on it can be found in the `Model Translations` section.
 
 
 Localization
@@ -393,7 +393,7 @@ Sellor uses `Babel <http://babel.pocoo.org/en/latest/>`_ as the interface to Uni
 3. Currency conversion
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Sellor can use currency exchange rate data to show price estimations in the visitor's local currency. Please consult :ref:`openexchangerates` for how to set this up for `Open Exchange Rates <https://openexchangerates.org/>`_.
+Sellor can use currency exchange rate data to show price estimations in the visitor's local currency. Please consult `Open Exchange Rates` for how to set this up for `Open Exchange Rates <https://openexchangerates.org/>`_.
 
 
 4. Phone numbers format
@@ -411,6 +411,7 @@ Model Translations
     The backend and the storefront are prepared to handle the translated properties, but
     GraphQL API and UI views will be added in the future releases.
 
+
 Overview
 --------
 
@@ -420,6 +421,7 @@ Model translations are available via ``TranslationProxy`` defined on the to-be-t
 
 If there's no relevant ``ModelTranslation`` available, it will return the original (therefore not translated) property.
 Otherwise, it will return the translated property.
+
 
 Adding a ModelTranslation
 -------------------------
@@ -475,6 +477,7 @@ We will use ``ProductTranslation``  to store our translated properties, it requi
 .. note:: Don't forget to set ``unique_together`` on the ``product`` and ``language_code``, there should be only one translation per product per language.
 
 .. warning:: ``ModelTranslation`` fields must always take the same arguments as the existing translatable model, eg. inconsistency in ``max_length`` attribute could lead to UI bugs with translation turned on.
+
 
 Using a ModelTranslation
 ------------------------
@@ -536,7 +539,7 @@ This gateway implements payments using `Braintree <https://www.braintreepayments
   Make sure that Braintree's currency is the same as your shop's, otherwise, customers will be charged the wrong amount.
   
  
-1. Stripe (supports Credit Cards)
+2. Stripe (supports Credit Cards)
 """""""""""""""""""""""""""""""""
 
 This gateway implements payments using `Stripe <https://stripe.com/>`_.
