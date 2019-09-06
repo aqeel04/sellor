@@ -285,6 +285,7 @@ latex_elements = {
         \hypersetup{linkcolor=black}
         \tableofcontents
         \listoffigures
+        \listoftables
         \clearpage
         \References
         \pagenumbering{arabic}
