@@ -351,3 +351,29 @@ Order Events
    | ``other``                 | ``OTHER``                 | Status used during reimporting of the legacy events.          |
    +---------------------------+---------------------------+---------------------------------------------------------------+
 
+
+Internationalization
+====================
+
+By default language and locale are determined based on the list of preferences supplied by a web browser. GeoIP is used to determine the visitor's country and their local currency.
+
+.. note::
+
+    Sellor uses Transifex to coordinate translations. If you wish to help please head to the `translation dashboard <https://www.transifex.com/mirumee/Sellor-1/>`_.
+
+    All translations are handled by the community. All translation teams are open and everyone is welcome to request a new language.
+
+
+Translation
+-----------
+
+Sellor uses ``gettext`` for translation. This is an industry standard for translating software and is the most common way to translate Django applications.
+
+Sellor's storefront and dashboard are both prepared for translation. They use separate translation domains and can be translated separately. All translations provide accurate context descriptions to make translation an easier task.
+
+It is possible to translate database content (like product descriptions) with Sellor, more on it can be found in the :ref:`model-translations` section.
+
+
+Localization
+------------
+
