@@ -513,21 +513,21 @@ Supported Payment Gateways
 
 
 1. Braintree (supports PayPal and Credit Cards)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""""""""""""""""""
 
 This gateway implements payments using `Braintree <https://www.braintreepayments.com/>`_.
 
 .. table:: Braintree Environment Variables
    :widths: 30 70
 
-    ========================== =================================================================================
-    Environment variable       Description
-    ========================== =================================================================================
-    ``BRAINTREE_SANDBOX_MODE`` Whether to use a sandbox environment for testing, ``True`` (default) or ``False``
-    ``BRAINTREE_MERCHANT_ID``  Merchant ID assigned by Braintree
-    ``BRAINTREE_PUBLIC_KEY``   Public key assigned by Braintree
-    ``BRAINTREE_PRIVATE_KEY``  Private key assigned by Braintree
-    ========================== =================================================================================
+    ==========================  =================================================================================
+    Environment variable        Description
+    ==========================  =================================================================================
+    ``BRAINTREE_SANDBOX_MODE``  Whether to use a sandbox environment for testing, ``True`` (default) or ``False``
+    ``BRAINTREE_MERCHANT_ID``   Merchant ID assigned by Braintree
+    ``BRAINTREE_PUBLIC_KEY``    Public key assigned by Braintree
+    ``BRAINTREE_PRIVATE_KEY``   Private key assigned by Braintree
+    ==========================  =================================================================================
 
 
 .. note::
@@ -538,7 +538,7 @@ This gateway implements payments using `Braintree <https://www.braintreepayments
   
  
 1. Stripe (supports Credit Cards)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""""
 
 This gateway implements payments using `Stripe <https://stripe.com/>`_.
 
@@ -586,6 +586,7 @@ When editing an order and removing items, Sellor will also offer to automaticall
 
 Sellor uses the concept of Payments and Transactions to fulfill the payment process.
 
+
 Payment Methods
 ---------------
 
@@ -600,15 +601,19 @@ Several payment methods can be used within a single order.
 
 Payment has 3 possible charge statuses:
 
-+----------------+-------------------+------------------------------------------------------------------------------------------------------+
-| Code           | GraphQL API value | Description                                                                                          |
-+----------------+-------------------+------------------------------------------------------------------------------------------------------+
-| charged        | CHARGED           | Funds were taken off the customer founding source, partly or completely covering the payment amount. |
-+----------------+-------------------+------------------------------------------------------------------------------------------------------+
-| not-charged    | NOT_CHARGED       | No funds were take off the customer founding source yet.                                             |
-+----------------+-------------------+------------------------------------------------------------------------------------------------------+
-| fully-refunded | FULLY_REFUNDED    | All charged funds were returned to the customer.                                                     |
-+----------------+-------------------+------------------------------------------------------------------------------------------------------+
+.. table:: Possible Charge Statuses
+   :widths: 26 26 48
+
+   +----------------+-------------------+----------------------------------------------------------------------------------+
+   | Code           | API value         | Description                                                                      |
+   +----------------+-------------------+----------------------------------------------------------------------------------+
+   | charged        | CHARGED           | Funds were taken off the customer founding source.                               |
+   +----------------+-------------------+----------------------------------------------------------------------------------+
+   | not-charged    | NOT_CHARGED       | No funds were take off the customer founding source yet.                         |
+   +----------------+-------------------+----------------------------------------------------------------------------------+
+   | fully-refunded | FULLY_REFUNDED    | All charged funds were returned to the customer.                                 |
+   +----------------+-------------------+----------------------------------------------------------------------------------+
+
 
 Transactions
 ------------
@@ -618,45 +623,52 @@ and your customers, within a chosen payment method.
 
 There are 5 possible transaction kinds:
 
-+---------+-------------------+----------------------------------------------------------------------------------------------------------------------------+
-| Code    | GraphQL API value | Description                                                                                                                |
-+---------+-------------------+----------------------------------------------------------------------------------------------------------------------------+
-| auth    | AUTH              | An amount reserved against the customer's funding source. Money does not change hands until the authorization is captured. |
-+---------+-------------------+----------------------------------------------------------------------------------------------------------------------------+
-| capture | CAPTURE           | A transfer of the money that was reserved during the authorization stage.                                                  |
-+---------+-------------------+----------------------------------------------------------------------------------------------------------------------------+
-| charge  | CHARGE            | Authorization and capture in a single step.                                                                                |
-+---------+-------------------+----------------------------------------------------------------------------------------------------------------------------+
-| void    | VOID              | A cancellation of a pending authorization or capture.                                                                      |
-+---------+-------------------+----------------------------------------------------------------------------------------------------------------------------+
-| refund  | REFUND            | Full or partial return of captured funds to the customer.                                                                  |
-+---------+-------------------+----------------------------------------------------------------------------------------------------------------------------+
+.. table:: Possible Transaction Kinds
+   :widths: 20 20 60
+
+   +---------+-------------------+-----------------------------------------------------------------------------------------+
+   | Code    | API value         | Description                                                                             |
+   +---------+-------------------+-----------------------------------------------------------------------------------------+
+   | auth    | AUTH              | An amount reserved against the customer's funding source.                               |
+   +---------+-------------------+-----------------------------------------------------------------------------------------+
+   | capture | CAPTURE           | A transfer of the money that was reserved during the authorization stage.               |
+   +---------+-------------------+-----------------------------------------------------------------------------------------+
+   | charge  | CHARGE            | Authorization and capture in a single step.                                             |
+   +---------+-------------------+-----------------------------------------------------------------------------------------+
+   | void    | VOID              | A cancellation of a pending authorization or capture.                                   |
+   +---------+-------------------+-----------------------------------------------------------------------------------------+
+   | refund  | REFUND            | Full or partial return of captured funds to the customer.                               |
+   +---------+-------------------+-----------------------------------------------------------------------------------------+
+
 
 Transaction errors
 ------------------
 
 Sellor unifies error codes across all gateways.
 
-+---------------------+---------------------+----------------------------------------------------+
-| Code                | Graphql API value   | Description                                        |
-+---------------------+---------------------+----------------------------------------------------+
-| incorrect_number    | INCORRECT_NUMBER    | Incorrect card number                              |
-+---------------------+---------------------+----------------------------------------------------+
-| invalid_number      | INVALID_NUMBER      | Invalid card number                                |
-+---------------------+---------------------+----------------------------------------------------+
-| incorrect_cvv       | INCORRECT_CVV       | Incorrect CVV (or CVC)                             |
-+---------------------+---------------------+----------------------------------------------------+
-| invalid_cvv         | INVALID_CVV         | Invalid CVV (or CVC)                               |
-+---------------------+---------------------+----------------------------------------------------+
-| incorrect_zip       | INCORRECT_ZIP       | Incorrect postal code                              |
-+---------------------+---------------------+----------------------------------------------------+
-| incorrect_address   | INCORRECT_ADDRESS   | Incorrect address (excluding postal code)          |
-+---------------------+---------------------+----------------------------------------------------+
-| invalid_expiry_date | INVALID_EXPIRY_DATE | Incorrect card's expiration date                   |
-+---------------------+---------------------+----------------------------------------------------+
-| expired             | EXPIRED             | Expired payment's method token                     |
-+---------------------+---------------------+----------------------------------------------------+
-| declined            | DECLINED            | Transaction was declined by the gateway            |
-+---------------------+---------------------+----------------------------------------------------+
-| processing_error    | PROCESSING_ERROR    | Default error used for all cases not covered above |
-+---------------------+---------------------+----------------------------------------------------+
+.. table:: Transaction Errors
+   :widths: 30 30 60
+
+   +---------------------+---------------------+----------------------------------------------------+
+   | Code                | API value   | Description                                        |
+   +---------------------+---------------------+----------------------------------------------------+
+   | incorrect_number    | INCORRECT_NUMBER    | Incorrect card number                              |
+   +---------------------+---------------------+----------------------------------------------------+
+   | invalid_number      | INVALID_NUMBER      | Invalid card number                                |
+   +---------------------+---------------------+----------------------------------------------------+
+   | incorrect_cvv       | INCORRECT_CVV       | Incorrect CVV (or CVC)                             |
+   +---------------------+---------------------+----------------------------------------------------+
+   | invalid_cvv         | INVALID_CVV         | Invalid CVV (or CVC)                               |
+   +---------------------+---------------------+----------------------------------------------------+
+   | incorrect_zip       | INCORRECT_ZIP       | Incorrect postal code                              |
+   +---------------------+---------------------+----------------------------------------------------+
+   | incorrect_address   | INCORRECT_ADDRESS   | Incorrect address (excluding postal code)          |
+   +---------------------+---------------------+----------------------------------------------------+
+   | invalid_expiry_date | INVALID_EXPIRY_DATE | Incorrect card's expiration date                   |
+   +---------------------+---------------------+----------------------------------------------------+
+   | expired             | EXPIRED             | Expired payment's method token                     |
+   +---------------------+---------------------+----------------------------------------------------+
+   | declined            | DECLINED            | Transaction was declined by the gateway            |
+   +---------------------+---------------------+----------------------------------------------------+
+   | processing_error    | PROCESSING_ERROR    | Default error used for all cases not covered above |
+   +---------------------+---------------------+----------------------------------------------------+
