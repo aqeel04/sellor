@@ -195,6 +195,9 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'sellordoc'
 
+numfig = True
+numfig_format = {'figure': 'My fig %s', 'table': 'My tab %s', 'code-block': 'My code %s'}
+
 latex_engine = 'pdflatex'
 latex_elements = {
     'papersize': 'a4paper',
