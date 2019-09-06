@@ -486,3 +486,15 @@ Given the example above, we can access translated properties via the ``Translati
     translated_name = product.translated.name
 
 .. note:: Translated property will be returned if there is a ``ModelTranslation`` with the same ``language_code`` as a user's currently active language. Otherwise, the original property will be returned.
+
+
+Search
+======
+
+There are two search mechanisms available in Sellor.
+
+The default is to use PostgreSQL. This is a fairly versatile solution that does not require any additional resources.
+
+A more sophisticated search backend can be enabled if an Elasticsearch server is available. Elasticsearch offers a lot of advanced features, such as boosting to tune the relevance of a query or "more like this" queries. See the `official Elasticsearch website <https://www.elastic.co/products/elasticsearch>`_ to read more about its features. Please note that enabling the Elasticsearch backend does not currently enable any additional features in Sellor.
+
+For installation and configuration instructions see :ref:`elasticsearch`.
