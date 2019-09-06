@@ -377,24 +377,20 @@ It is possible to translate database content (like product descriptions) with Se
 Localization
 ------------
 
-
 Data formats
 ************
 
 Sellor uses `Babel <http://babel.pocoo.org/en/latest/>`_ as the interface to Unicode's CLDR library to provide accurate number and date formatting as well as proper currency designation.
-
 
 Address forms
 *************
 
 `Google's address format database <https://github.com/mirumee/google-i18n-address>`_ is used to provide locale-specific address formats and forms. It also takes care of address validation so you don't have to know how to address a package to China or whether United Arab Emirates use postal codes (they don't).
 
-
 Currency conversion
 *******************
 
 Sellor can use currency exchange rate data to show price estimations in the visitor's local currency. Please consult :ref:`openexchangerates` for how to set this up for `Open Exchange Rates <https://openexchangerates.org/>`_.
-
 
 Phone numbers format
 ********************
