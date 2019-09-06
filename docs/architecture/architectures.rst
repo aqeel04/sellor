@@ -503,3 +503,60 @@ A more sophisticated search backend can be enabled if an Elasticsearch server is
 For installation and configuration instructions see :ref:`elasticsearch`.
 
 
+Payments Architecture
+=====================
+
+
+Supported Payment Gateways
+--------------------------
+
+#. Braintree (supports PayPal and Credit Cards)
+
+#. Stripe (supports Credit Cards)
+
+
+1. Braintree (supports PayPal and Credit Cards)
+"""""""""""""""""""""""""""""""""""""""""""""""
+
+This gateway implements payments using `Braintree <https://www.braintreepayments.com/>`_.
+
+.. table:: Braintree Environment Variables
+
+    ==========================  =================================================================================
+    Environment variable        Description
+    ==========================  =================================================================================
+    ``BRAINTREE_SANDBOX_MODE``  Whether to use a sandbox environment for testing, ``True`` (default) or ``False``
+    ``BRAINTREE_MERCHANT_ID``   Merchant ID assigned by Braintree
+    ``BRAINTREE_PUBLIC_KEY``    Public key assigned by Braintree
+    ``BRAINTREE_PRIVATE_KEY``   Private key assigned by Braintree
+    ==========================  =================================================================================
+
+
+.. note::
+  This backend does not support fraud detection.
+    
+.. warning::
+  Make sure that Braintree's currency is the same as your shop's, otherwise, customers will be charged the wrong amount.
+  
+ 
+2. Stripe (supports Credit Cards)
+"""""""""""""""""""""""""""""""""
+
+This gateway implements payments using `Stripe <https://stripe.com/>`_.
+
+.. table:: Stripe Environment variables
+
+    ================================== =====================================================================================
+    Environment variable               Description
+    ================================== =====================================================================================
+    ``STRIPE_PUBLIC_KEY``              Your Stripe public key (test or live)
+    ``STRIPE_SECRET_KEY``              Your Stripe secret key (test or live)
+    ``STRIPE_STORE_NAME``              Your store name to show in the checkout form
+    ``STRIPE_STORE_IMAGE``             An absolute or relative link of your store logo to show in the checkout form
+    ``STRIPE_PREFILL``                 Prefill the email adddress in the checkout form if set to ``True`` (default)
+    ``STRIPE_REMEMBER_ME``             for future purchases in the checkout form if set to ``True`` (default)
+    ``STRIPE_LOCALE``                  Specify ``auto`` to display checkout form in the user's preferred language (default)
+    ``STRIPE_ENABLE_BILLING_ADDRESS``  Collect the user's billing address in the checkout form if set to ``True``.
+    ``STRIPE_ENABLE_SHIPPING_ADDRESS`` Collect the user's shipping address in the checkout form if set to ``True``.
+    ================================== =====================================================================================
+
