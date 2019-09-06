@@ -151,7 +151,6 @@ Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 2
    ============  ================  =================  =================================
 
 .. table:: Variants
-   :width: 100%
 
    ====  ============  ==============
    SKU   Package size  Price override
