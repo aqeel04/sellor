@@ -744,3 +744,13 @@ Settings object is chosen by pk from ``SITE_SETTINGS_ID`` variable.
 Context Processor
 -----------------
 Thanks to ``Sellor.site.context_processors.settings`` you can access *Site settings* in template with ``settings`` variable.
+
+
+Activity Diagrams
+=================
+
+
+Login Activity Diagrams
+-----------------------
+
+.. figure:: img/login-diagram.jpg
