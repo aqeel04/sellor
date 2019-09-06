@@ -190,9 +190,9 @@ You have great selection of online games items. Each item is unique, important d
 
 .. table:: Products
 
-   ============  ================  ======  ==============  ==========  ==================================================
-   Product type  Name              Price  Game            Max attack  Description
-   ============  ================  ======  ==============  ==========  ==================================================
-   Game item     Magic Fire Sword  $199   Kings Online    8000        Unique sword for any fighter. Set enemies on fire!
-   Game item     Rapid Pistol      $2500  Target Shooter  250         Fastest pistol in the whole game.
-   ============  ================  ======  ==============  ==========  ==================================================
+   ============  ================  ======  ==============  ==========  =================================
+   Product type  Name              Price   Game            Max attack  Description
+   ============  ================  ======  ==============  ==========  =================================
+   Game item     Magic Fire Sword  $199    Kings Online    8000        Unique sword for any fighter.
+   Game item     Rapid Pistol      $2500   Target Shooter  250         Fastest pistol in the whole game.
+   ============  ================  ======  ==============  ==========  =================================
