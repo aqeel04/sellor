@@ -123,7 +123,8 @@ Example: Coffee
 Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 250g packages. Orders are shipped by couriers.
 
 .. table:: Attributes
-   :numbered:
+   
+.. centered:: LICENSE AGREEMENT
 
    =================  ===========
    Attribute          Values
