@@ -546,7 +546,7 @@ This gateway implements payments using `Braintree <https://www.braintreepayments
 This gateway implements payments using `Stripe <https://stripe.com/>`_.
 
 .. table:: Stripe Environment variables
-   :widths: 40 60
+   :widths: 45 55
 
    ==================================  =====================================================================================
    Environment variable                Description
