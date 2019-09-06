@@ -521,15 +521,16 @@ Supported Payment Gateways
 This gateway implements payments using `Braintree <https://www.braintreepayments.com/>`_.
 
 .. table:: Braintree Environment Variables
+   :widths: 40 60
 
-    ==========================  =================================================================================
-    Environment variable        Description
-    ==========================  =================================================================================
-    ``BRAINTREE_SANDBOX_MODE``  Whether to use a sandbox environment for testing, ``True`` (default) or ``False``
-    ``BRAINTREE_MERCHANT_ID``   Merchant ID assigned by Braintree
-    ``BRAINTREE_PUBLIC_KEY``    Public key assigned by Braintree
-    ``BRAINTREE_PRIVATE_KEY``   Private key assigned by Braintree
-    ==========================  =================================================================================
+   ==========================  =================================================================================
+   Environment variable        Description
+   ==========================  =================================================================================
+   ``BRAINTREE_SANDBOX_MODE``  Whether to use a sandbox environment for testing, ``True`` (default) or ``False``
+   ``BRAINTREE_MERCHANT_ID``   Merchant ID assigned by Braintree
+   ``BRAINTREE_PUBLIC_KEY``    Public key assigned by Braintree
+   ``BRAINTREE_PRIVATE_KEY``   Private key assigned by Braintree
+   ==========================  =================================================================================
 
 
 .. note::
@@ -545,20 +546,21 @@ This gateway implements payments using `Braintree <https://www.braintreepayments
 This gateway implements payments using `Stripe <https://stripe.com/>`_.
 
 .. table:: Stripe Environment variables
+   :widths: 40 60
 
-    ================================== =====================================================================================
-    Environment variable               Description
-    ================================== =====================================================================================
-    ``STRIPE_PUBLIC_KEY``              Your Stripe public key (test or live)
-    ``STRIPE_SECRET_KEY``              Your Stripe secret key (test or live)
-    ``STRIPE_STORE_NAME``              Your store name to show in the checkout form
-    ``STRIPE_STORE_IMAGE``             An absolute or relative link of your store logo to show in the checkout form
-    ``STRIPE_PREFILL``                 Prefill the email adddress in the checkout form if set to ``True`` (default)
-    ``STRIPE_REMEMBER_ME``             for future purchases in the checkout form if set to ``True`` (default)
-    ``STRIPE_LOCALE``                  Specify ``auto`` to display checkout form in the user's preferred language (default)
-    ``STRIPE_ENABLE_BILLING_ADDRESS``  Collect the user's billing address in the checkout form if set to ``True``.
-    ``STRIPE_ENABLE_SHIPPING_ADDRESS`` Collect the user's shipping address in the checkout form if set to ``True``.
-    ================================== =====================================================================================
+   ==================================  =====================================================================================
+   Environment variable                Description
+   ==================================  =====================================================================================
+   ``STRIPE_PUBLIC_KEY``               Your Stripe public key (test or live)
+   ``STRIPE_SECRET_KEY``               Your Stripe secret key (test or live)
+   ``STRIPE_STORE_NAME``               Your store name to show in the checkout form
+   ``STRIPE_STORE_IMAGE``              An absolute or relative link of your store logo to show in the checkout form
+   ``STRIPE_PREFILL``                  Prefill the email adddress in the checkout form if set to ``True`` (default)
+   ``STRIPE_REMEMBER_ME``              For future purchases in the checkout form if set to ``True`` (default)
+   ``STRIPE_LOCALE``                   Specify ``auto`` to display checkout form in the user's preferred language (default)
+   ``STRIPE_ENABLE_BILLING_ADDRESS``   Collect the user's billing address in the checkout form if set to ``True``.
+   ``STRIPE_ENABLE_SHIPPING_ADDRESS``  Collect the user's shipping address in the checkout form if set to ``True``.
+   ==================================  =====================================================================================
 
 
 Authorization and Capture
@@ -648,7 +650,7 @@ Transaction errors
 Sellor unifies error codes across all gateways.
 
 .. table:: Transaction Errors
-   :widths: 30 30 60
+   :widths: 30 30 40
 
    +---------------------+---------------------+----------------------------------------------------------------------+
    | Code                | API value           | Description                                                          |
