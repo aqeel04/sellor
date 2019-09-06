@@ -753,4 +753,4 @@ Activity Diagrams
 Login Activity Diagrams
 -----------------------
 
-.. figure:: img/login-diagram.jpg
+.. figure:: /img/login-diagram.jpg
