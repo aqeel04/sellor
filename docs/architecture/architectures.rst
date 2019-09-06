@@ -650,7 +650,7 @@ Transaction errors
 Sellor unifies error codes across all gateways.
 
 .. table:: Transaction Errors
-   :widths: 30 30 40
+   :widths: 25 35 40
 
    +---------------------+---------------------+----------------------------------------------------------------------+
    | Code                | API value           | Description                                                          |
