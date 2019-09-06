@@ -120,7 +120,7 @@ Example: Coffee
 
 Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 250g packages. Orders are shipped by couriers. 
 
-.. table:: Attributes
+.. table:: Coffee - Attributes
 
    =================  ===========
    Attribute          Values
@@ -134,7 +134,7 @@ Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 2
                       * 250g
    =================  ===========
 
-.. table:: Product type
+.. table:: Coffee - Product type
 
    ======  ===================  =========  ==================  =========
    Name    Product attributes   Variants?  Variant attributes  Shipping?
@@ -142,7 +142,7 @@ Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 2
    Coffee  * Country of origin  Yes        * Package size      Yes
    ======  ===================  =========  ==================  =========
 
-.. table:: Product
+.. table:: Coffee - Product
 
    ============  ================  =================  =================================
    Product type  Name              Country of origin  Description
@@ -150,7 +150,7 @@ Your shop sells Coffee from around the world. Customer can order 1kg, 500g and 2
    Coffee        Best Java Coffee  Indonesia          Best coffee found on Java island!
    ============  ================  =================  =================================
 
-.. table:: Variants
+.. table:: Coffee - Variants
 
    ====  ============  ==============
    SKU   Package size  Price override
@@ -166,7 +166,7 @@ Example: Online game items
 
 You have great selection of online games items. Each item is unique, important details are included in description. Bought items are shipped directly to buyer account.
 
-.. table:: Attributes
+.. table:: Online Game Items - Attributes
 
    ==========  ================
    Attribute   Values
@@ -177,7 +177,7 @@ You have great selection of online games items. Each item is unique, important d
    Max attack  ---
    ==========  ================
 
-.. table:: Product type
+.. table:: Online Game Items - Product type
 
    =========  ==================  =========  ==================  =========
    Name       Product attributes  Variants?  Variant attributes  Shipping?
@@ -186,7 +186,7 @@ You have great selection of online games items. Each item is unique, important d
               * Max attack
    =========  ==================  =========  ==================  =========
 
-.. table:: Products
+.. table:: Online Game Items - Products
 
    ============  ================  =======  ==============  ==========  =================================
    Product type  Name              Price    Game            Max attack  Description
