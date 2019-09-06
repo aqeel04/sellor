@@ -318,8 +318,7 @@ Order Events
    +--------------------------+--------------------------+-----------------------------------------------------------------+
    | ``placed``               | ``PLACED``               | An order was placed by the customer.                            |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
-   | ``draft_placed``         | ``PLACED_FROM            | An order was created from draft by the staff user.              |
-   |                          | _DRAFT``                 |                                                                 |
+   | ``draft_placed``         | ``FROM_DRAFT``           | An order was created from draft by the staff user.              |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
    | ``oversold_items``       | ``OVERSOLD_ITEMS``       | An order was created from draft.                                |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
@@ -339,11 +338,11 @@ Order Events
    +--------------------------+--------------------------+-----------------------------------------------------------------+
    | ``voided``               | ``VOIDED``               | The payment was voided.                                         |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
-   | ``fulfillment_canceled`` | ``FULFILLMENT_CANCELED`` | Fulfillment for one or more of the items was canceled.          |
+   | ``fulfill_canceled``     | ``FULFILL_CANCELED``     | Fulfillment for one or more of the items was canceled.          |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
-   | ``restocked_items``      | ``RESTOCKED_ITEMS``      | One or more of the order's items have been resocked             |
+   | ``restock_items``        | ``RESTOCK_ITEMS``        | One or more of the order's items have been resocked             |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
-   | ``fulfilled_items``      | ``FULFILLED_ITEMS``      | One or more of the order's items have been fulfilled.           |
+   | ``fulfill_items``        | ``FULFILL_ITEMS``        | One or more of the order's items have been fulfilled.           |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
    | ``note_added``           | ``NOTE_ADDED``           | A note was added to the order by the staff.                     |
    +--------------------------+--------------------------+-----------------------------------------------------------------+
