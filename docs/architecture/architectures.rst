@@ -513,7 +513,7 @@ Supported Payment Gateways
 
 
 1. Braintree (supports PayPal and Credit Cards)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This gateway implements payments using `Braintree <https://www.braintreepayments.com/>`_.
 
@@ -538,7 +538,7 @@ This gateway implements payments using `Braintree <https://www.braintreepayments
   
  
 1. Stripe (supports Credit Cards)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This gateway implements payments using `Stripe <https://stripe.com/>`_.
 
