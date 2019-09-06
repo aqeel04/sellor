@@ -384,7 +384,6 @@ Localization
 Sellor uses `Babel <http://babel.pocoo.org/en/latest/>`_ as the interface to Unicode's CLDR library to provide accurate number and date formatting as well as proper currency designation.
 
 
-
 2. Address forms
 ~~~~~~~~~~~~~~~~
 
@@ -392,12 +391,12 @@ Sellor uses `Babel <http://babel.pocoo.org/en/latest/>`_ as the interface to Uni
 
 
 3. Currency conversion
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 Sellor can use currency exchange rate data to show price estimations in the visitor's local currency. Please consult :ref:`openexchangerates` for how to set this up for `Open Exchange Rates <https://openexchangerates.org/>`_.
 
 
 4. Phone numbers format
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Sellor uses `Google's libphonenumber library <https://github.com/googlei18n/libphonenumber>`_ to ensure provided numbers are correct. You need to choose prefix and type the number separately. No matter what country has been chosen, you may enter phone number belonging to any other country format.
