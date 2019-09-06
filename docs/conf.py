@@ -196,7 +196,7 @@ html_static_path = ['_static']
 htmlhelp_basename = 'sellordoc'
 
 numfig = True
-numfig_format = {'figure': 'My fig %s', 'table': 'My tab %s', 'code-block': 'My code %s'}
+#numfig_format = {'figure': 'My fig %s', 'table': 'My tab %s', 'code-block': 'My code %s'}
 
 latex_engine = 'pdflatex'
 latex_elements = {
