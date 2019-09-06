@@ -377,3 +377,9 @@ It is possible to translate database content (like product descriptions) with Se
 Localization
 ------------
 
+
+1. Data formats
+^^^^^^^^^^^^^^^
+
+Sellor uses `Babel <http://babel.pocoo.org/en/latest/>`_ as the interface to Unicode's CLDR library to provide accurate number and date formatting as well as proper currency designation.
+
