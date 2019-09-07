@@ -762,12 +762,13 @@ Login Activity Diagram
 Registration Activity Diagram
 -----------------------------
 
+|
+|
+
 .. figure:: ../img/registration-diagram.jpg
 
    Registration Activity
    
-|
-|
 |
 |
 |
