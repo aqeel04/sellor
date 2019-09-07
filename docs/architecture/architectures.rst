@@ -806,7 +806,6 @@ Use Case Diagram
 
    Use Case Diagram
 
-|
 
 Class Diagrams
 ==============
