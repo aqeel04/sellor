@@ -757,7 +757,23 @@ Login Activity Diagram
    
    Login Activity
 
-|
+\newpage
 
 Registration Activity Diagram
 -----------------------------
+
+.. figure:: ../img/registration-diagram.jpg
+
+   Registration Activity
+   
+\newpage
+
+Admin Activity Diagram
+----------------------
+
+.. figure:: ../img/admin-diagram.jpg
+
+   Admin Activity
+   
+\newpage
+
