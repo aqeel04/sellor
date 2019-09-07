@@ -815,12 +815,11 @@ Class Diagrams
 Product Class Diagram
 ---------------------
 
-|
-
 .. figure:: ../img/product_class_tree.png
 
    Product Class Diagram
 
+|
 
 Site Map
 ========
