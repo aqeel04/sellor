@@ -797,12 +797,16 @@ Customer Activity Diagram
 |
 
 Use Case Diagram
-================ 
+================
+
+|
+|
 
 .. figure:: ../img/use-case.jpg
 
    Use Case Diagram
-   
+
+|
 
 Class Diagrams
 ==============
