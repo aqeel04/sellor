@@ -798,3 +798,20 @@ Customer Activity Diagram
 
 Use Case Diagram
 ================ 
+
+.. figure:: ../img/use-case.jpg
+
+   Use Case Diagram
+   
+
+Class Diagrams
+==============
+
+
+Product Class Diagram
+---------------------
+
+.. figure:: ../img/product_class_tree.png
+
+   Product Class Diagram
+
