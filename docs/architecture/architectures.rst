@@ -819,3 +819,15 @@ Product Class Diagram
 .. figure:: ../img/product_class_tree.png
 
    Product Class Diagram
+
+
+Site Map
+========
+
+Home Page
+---------
+
+.. figure:: ../img/home-page.png
+
+   Home Page
+   
