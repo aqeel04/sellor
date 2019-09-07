@@ -769,6 +769,8 @@ Registration Activity Diagram
 |
 |
 |
+|
+|
 
 Admin Activity Diagram
 ----------------------
