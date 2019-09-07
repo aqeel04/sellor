@@ -750,7 +750,9 @@ Activity Diagrams
 =================
 
 
-Login Activity Diagrams
+Login Activity Diagram
 -----------------------
+
+.. _LoginActivityDiagram:
 
 .. figure:: ../img/login-diagram.jpg
