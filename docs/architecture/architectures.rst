@@ -754,7 +754,7 @@ Login Activity Diagram
 -----------------------
 
 .. figure:: ../img/login-diagram.jpg
-   :numref: `Fig. 4.1: Login Activity`
+   :name: Login Activity
 
 
 Registration Activity Diagram
