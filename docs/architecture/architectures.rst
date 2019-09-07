@@ -784,5 +784,17 @@ Admin Activity Diagram
    
 |
 
+Customer Activity Diagram
+-------------------------
+
+|
+|
+
+.. figure:: ../img/user-diagram.jpg
+
+   Customer Activity
+   
+|
+
 Use Case Diagram
 ================ 
