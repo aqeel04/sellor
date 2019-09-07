@@ -831,3 +831,10 @@ Home Page
 
    Home Page
    
+Login Page
+----------
+
+.. figure:: ../img/login-page.png
+
+   Login Page
+   
