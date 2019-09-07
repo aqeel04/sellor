@@ -195,6 +195,9 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'sellordoc'
 
+numfig_format = {'figure': 'Figure %s',
+                 'table': 'Table %s'
+                }
 numfig = True
 #numfig_format = {'figure': 'Fig. %s'}
 
