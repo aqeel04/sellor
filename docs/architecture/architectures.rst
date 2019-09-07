@@ -757,7 +757,7 @@ Login Activity Diagram
    
    Login Activity
 
-\newpage
+|
 
 Registration Activity Diagram
 -----------------------------
@@ -766,7 +766,7 @@ Registration Activity Diagram
 
    Registration Activity
    
-\newpage
+|
 
 Admin Activity Diagram
 ----------------------
@@ -775,5 +775,5 @@ Admin Activity Diagram
 
    Admin Activity
    
-\newpage
+|
 
