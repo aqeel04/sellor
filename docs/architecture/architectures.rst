@@ -771,10 +771,12 @@ Registration Activity Diagram
    
 |
 |
-|
 
 Admin Activity Diagram
 ----------------------
+
+|
+|
 
 .. figure:: ../img/admin-diagram.jpg
 
@@ -782,3 +784,5 @@ Admin Activity Diagram
    
 |
 
+Use Case Diagram
+================
