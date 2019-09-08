@@ -964,14 +964,3 @@ Dashboard Home Page
 
    Dashboard Home Page
    
-|
-|
-|
-|
-|
-|
-|
-
-
-Deployment
-==========
