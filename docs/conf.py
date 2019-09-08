@@ -230,9 +230,6 @@ latex_elements = {
         \usepackage[T1]{fontenc}
         \fancyhf[]{}
         
-        \lhead{}
-        \rhead{'online'}
-        
         \usepackage{float}
         \usepackage{xcolor}
         \usepackage{hyperref}
