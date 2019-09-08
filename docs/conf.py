@@ -305,7 +305,7 @@ latex_elements = {
 }
 
 latex_documents = [
-   (master_doc, 'sellor.tex', 'Website for',
+   (master_doc, 'sellor.tex', ' ',
      'Aqeel Chishti', 'report')
 ]
 
