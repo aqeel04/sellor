@@ -228,7 +228,7 @@ latex_elements = {
         \pagestyle{fancy}
         \usepackage{mathptmx}
         \usepackage[T1]{fontenc} 
-        \fancyhf{}
+        \fancyhf[]{}
         
         \rhead[]{Overleaf}
         \lhead[]{Online}
