@@ -57,8 +57,8 @@ author = u'Online Shopping System'
 # The short X.Y version.
 version = u'1.0.2'
 # The full version, including alpha/beta/rc tags.
-#release = u'Online Shopping System'
-release = 'Online Shop'
+release = u'Online Shopping System'
+#release = 'Online Shop'
 
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
@@ -229,6 +229,9 @@ latex_elements = {
         \usepackage{mathptmx}
         \usepackage[T1]{fontenc}
         \fancyhf[]{}
+        
+        \lhead{}
+        \rhead{'online'}
         
         \usepackage{float}
         \usepackage{xcolor}
