@@ -884,7 +884,7 @@ Category Page
 |
 |
 
-.. figure:: ../img/categories-list-page.png
+.. figure:: ../img/single-categories-page.png
 
    Category Page
    
