@@ -12,8 +12,8 @@ Before you are ready to run Sellor you will need additional software installed o
 
 Sellor needs PostgreSQL version 9.4 or above to work. Get the macOS installer from the `PostgreSQL download page <https://www.postgresql.org/download/macosx/>`_.
 
-Command Line Tools for Xcode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2. Command Line Tools for Xcode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Download and install the latest version of "Command Line Tools (macOS 10.x) for Xcode 9.x" from the `Downloads for Apple Developers page <https://developer.apple.com/download/more/>`_.
 
@@ -24,7 +24,7 @@ Then run:
  $ xcode-select --install
 
 
-2. Homebrew
+3. Homebrew
 ^^^^^^^^^^^
 
 Run the following command:
@@ -34,7 +34,7 @@ Run the following command:
  $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 
-3. Python 3
+4. Python 3
 ^^^^^^^^^^^
 
 Use Homebrew to install the latest version of Python 3:
@@ -44,7 +44,7 @@ Use Homebrew to install the latest version of Python 3:
  $ brew install python3
 
 
-4. Git
+5. Git
 ^^^^^^
 
 Use Homebrew to install Git:
@@ -54,7 +54,7 @@ Use Homebrew to install Git:
  $ brew install git
 
 
-5. Gtk+
+6. Gtk+
 ^^^^^^^
 
 Use Homebrew to install the graphical libraries necessary for PDF creation:
@@ -285,15 +285,15 @@ Sellor needs PostgreSQL version 9.4 or above to work. Use the `PostgreSQL downlo
 
 Some features like PDF creation require that additional system libraries are present.
 
-Redhat / Fedora
-_______________
+3.1 Redhat / Fedora
+"""""""""""""""""""
 
 .. code-block:: console
 
  $ sudo yum install redhat-rpm-config python-devel python-pip python-cffi libffi-devel cairo pango gdk-pixbuf2
 
-Debian / Ubuntu
-_______________
+3.2 Debian / Ubuntu
+"""""""""""""""""""
 
 Debian 9.0 Stretch or newer, Ubuntu 16.04 Xenial or newer:
 
@@ -301,15 +301,15 @@ Debian 9.0 Stretch or newer, Ubuntu 16.04 Xenial or newer:
 
  $ sudo apt-get install build-essential python3-dev python3-pip python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
 
-Archlinux
-_________
+3.3 Archlinux
+"""""""""""""
 
 .. code-block:: console
 
  $ sudo pacman -S python-pip cairo pango gdk-pixbuf2 libffi pkg-config
 
-Gentoo
-______
+3.4 Gentoo
+""""""""""
 
 .. code-block:: console
 
