@@ -305,7 +305,7 @@ latex_elements = {
 }
 
 latex_documents = [
-   (master_doc, 'sellor.tex', 'Ecommerce Website for Online Shopping',
+   (master_doc, 'sellor.tex', 'Website for',
      'Aqeel Chishti', 'report')
 ]
 
