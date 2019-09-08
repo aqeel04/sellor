@@ -2,11 +2,7 @@ Guides
 ======
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   guides/orders
-   guides/payments
-   guides/navigation
-   guides/taxes
-   guides/recaptcha
-   guides/email_integration
+   guides/guides.rst
+   
