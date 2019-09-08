@@ -302,8 +302,7 @@ latex_elements = {
 }
 
 latex_documents = [
-   (master_doc, 'sellor.tex', ' ',
-     'Aqeel Chishti', 'report')
+   (master_doc, 'sellor.tex')
 ]
 
 
