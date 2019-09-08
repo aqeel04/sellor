@@ -230,11 +230,8 @@ latex_elements = {
         \usepackage[T1]{fontenc} 
         \fancyhf{}
         
-        \rhead{Overleaf}
-        \lhead{Online}
-        
-        \renewcommand{\headrulewidth}{2pt}
-        \renewcommand{\footrulewidth}{2pt}
+        \rhead[]{Overleaf}
+        \lhead[]{Online}
         
         \usepackage{float}
         \usepackage{xcolor}
