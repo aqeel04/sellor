@@ -828,7 +828,7 @@ Home Page
 ---------
 
 .. figure:: ../img/home-page.png
-   :scale: 95%
+   :scale: 90%
 
    Home Page
    
