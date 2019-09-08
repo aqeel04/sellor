@@ -775,8 +775,6 @@ Registration Activity Diagram
 Admin Activity Diagram
 ----------------------
 
-|
-
 .. figure:: ../img/admin-diagram.jpg
    :scale: 120%
 
