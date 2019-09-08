@@ -227,8 +227,10 @@ latex_elements = {
         \usepackage[utf8]{inputenc}
         \pagestyle{fancy}
         \usepackage{mathptmx}
-        \usepackage[T1]{fontenc}
-        \fancyhf[]{}
+        \usepackage[T1]{fontenc} 
+        \fancyhf{}
+        
+        \rhead{Overleaf}
         
         \usepackage{float}
         \usepackage{xcolor}
