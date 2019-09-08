@@ -802,7 +802,7 @@ Use Case Diagram
 |
 
 .. figure:: ../img/use-case.jpg
-   :scale: 120%
+   :scale: 125%
 
    Use Case Diagram
 
