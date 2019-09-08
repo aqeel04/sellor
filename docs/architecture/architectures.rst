@@ -787,9 +787,9 @@ Customer Activity Diagram
 -------------------------
 
 |
-|
 
 .. figure:: ../img/user-diagram.jpg
+   :scale: 115%
 
    Customer Activity
    
