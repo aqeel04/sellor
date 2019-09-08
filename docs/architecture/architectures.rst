@@ -789,7 +789,7 @@ Customer Activity Diagram
 |
 
 .. figure:: ../img/user-diagram.jpg
-   :scale: 115%
+   :scale: 120%
 
    Customer Activity
    
@@ -802,6 +802,7 @@ Use Case Diagram
 |
 
 .. figure:: ../img/use-case.jpg
+   :scale: 120%
 
    Use Case Diagram
 
