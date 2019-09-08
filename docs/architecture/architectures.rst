@@ -880,4 +880,98 @@ Signup Page
 Category Page
 -------------
 
+|
+|
+|
 
+.. figure:: ../img/categories-list-page.png
+
+   Category Page
+   
+|
+|
+|
+|
+|
+|
+|
+
+Product Detail page
+-------------------
+
+|
+|
+|
+
+.. figure:: ../img/product-detail-page.png
+
+   Product Detail page
+   
+|
+|
+|
+|
+|
+|
+|
+
+Cart Page
+---------
+
+|
+|
+|
+
+.. figure:: ../img/cart-page.png
+
+   Cart Page
+   
+|
+|
+|
+|
+|
+|
+|
+
+Checkout Page
+-------------
+
+|
+|
+|
+
+.. figure:: ../img/checkout-page.png
+
+   Checkout Page
+   
+|
+|
+|
+|
+|
+|
+|
+
+Dashboard Home Page
+-------------------
+
+|
+|
+|
+
+.. figure:: ../img/admin-home-page.png
+
+   Dashboard Home Page
+   
+|
+|
+|
+|
+|
+|
+|
+
+
+Deployment
+==========
