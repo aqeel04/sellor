@@ -230,9 +230,6 @@ latex_elements = {
         \usepackage[T1]{fontenc} 
         \fancyhf[]{}
         
-        \rhead[]{Overleaf}
-        \lhead[]{Online}
-        
         \usepackage{float}
         \usepackage{xcolor}
         \usepackage{hyperref}
@@ -393,7 +390,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   (master_doc, 'Ecommerce Website for Online Shopping', u'',
-   author, 'Ecommerce Website for Online Shopping', '.',
+   author, 'Aqeel Chishti', '.',
    ''),
 ]
 
