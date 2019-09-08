@@ -50,14 +50,14 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Ecommerce WebSite for Online Shopping'
-copyright = u'2019, Online Shopping System'
-author = u'Online Shopping System'
+project = 'Ecommerce Website for Online Shopping'
+copyright = '2019, Ecommerce Website for Online Shopping'
+author = 'Aqeel Chishti'
 
 # The short X.Y version.
 version = u'1.0.2'
 # The full version, including alpha/beta/rc tags.
-release = u'Online Shopping System'
+release = u'Ecommerce Website for Online Shopping'
 #release = 'Online Shop'
 
 # This is also used if you do content translation via gettext catalogs.
@@ -305,8 +305,8 @@ latex_elements = {
 }
 
 latex_documents = [
-   (master_doc, 'sellor.tex', u'',
-     u'', 'report')
+   (master_doc, 'sellor.tex', 'Ecommerce Website for Online Shopping',
+     'Aqeel Chishti', 'report')
 ]
 
 
@@ -392,8 +392,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Online Shopping System', u'',
-   author, 'Online Shopping System', '.',
+  (master_doc, 'Ecommerce Website for Online Shopping', u'',
+   author, 'Ecommerce Website for Online Shopping', '.',
    ''),
 ]
 
