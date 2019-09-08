@@ -270,6 +270,8 @@ Example
 
         # Return a list of responses, each response must be json serializable
         return [authorize_response, capture_response]
+|
+|
 
 Example
 """""""
@@ -336,9 +338,9 @@ Additional fields can be sent for logging/debug purposes. The only requirement i
 
 
 Example
-=======
+"""""""
 
-.. code-block: python
+.. code-block:: python
 
     response = {
         'transaction_id': 'token-from-gateway',
