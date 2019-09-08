@@ -57,7 +57,7 @@ author = 'Aqeel Chishti'
 # The short X.Y version.
 version = u'1.0.2'
 # The full version, including alpha/beta/rc tags.
-release = u'Ecommerce Website for Online Shopping'
+release = 'Ecommerce Website for Online Shopping'
 #release = 'Online Shop'
 
 # This is also used if you do content translation via gettext catalogs.
