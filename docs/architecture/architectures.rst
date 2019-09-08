@@ -782,7 +782,6 @@ Admin Activity Diagram
 
    Admin Activity
    
-|
 
 Customer Activity Diagram
 -------------------------
