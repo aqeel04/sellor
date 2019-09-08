@@ -1,5 +1,3 @@
-.. _adding-payments:
-
 Payments
 ========
 
@@ -12,13 +10,9 @@ several methods that should be implemented.
 Your changes should live under the
 ``sellor.payment.gateways.<gateway name>`` module.
 
-.. note::
 
-    After completing those steps you will also need to integrate your payment
-    gateway into your SPA Storefront's workflow.
-
-get_client_token(connection_params)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. get_client_token(connection_params)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A client token is a signed data blob that includes configuration and
 authorization information required by the payment gateway.
@@ -36,8 +30,9 @@ Example
         client_token = gateway.client_token.generate()
         return client_token
 
-authorize(payment_information, connection_params)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2. authorize(payment_information, connection_params)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A process of reserving the amount of money against the customer's funding
 source. Money does not change hands until the authorization is captured.
@@ -66,8 +61,9 @@ Example
             'raw_response': get_payment_gateway_response(response),
         }
 
-refund(payment_information, connection_params)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+3. refund(payment_information, connection_params)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Full or partial return of captured funds to the customer.
 
@@ -95,8 +91,9 @@ Example
             'raw_response': get_payment_gateway_response(response),
         }
 
-capture(payment_information, connection_params)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+4. capture(payment_information, connection_params)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A transfer of the money that was reserved during the authorization stage.
 
@@ -124,8 +121,9 @@ Example
             'raw_response': get_payment_gateway_response(response),
         }
 
-void(payment_information, connection_params)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+5. void(payment_information, connection_params)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A cancellation of a pending authorization or capture.
 
@@ -153,8 +151,9 @@ Example
             'raw_response': get_payment_gateway_response(response),
         }
 
-charge(payment_information, connection_params)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+6. charge(payment_information, connection_params)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Authorization and capture in a single step.
 
@@ -184,7 +183,8 @@ Example
             'raw_response': get_payment_gateway_response(response),
         }
 
-process_payment(payment_information, connection_params)
+
+7. process_payment(payment_information, connection_params)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Used for the checkout process, it should perform all the necessary
@@ -210,17 +210,6 @@ Example
 
         # Return a list of responses, each response must be json serializable
         return [authorize_response, capture_response]
-
-Parameters
-^^^^^^^^^^
-
-+-------------------------+----------+------------------------------------------------------------------------------------+
-| name                    | type     | description                                                                        |
-+-------------------------+----------+------------------------------------------------------------------------------------+
-| ``payment_information`` | ``dict`` | Payment information, containing the token, amount, currency and billing.           |
-+-------------------------+----------+------------------------------------------------------------------------------------+
-| ``connection_params``   | ``dict`` | List of parameters used for connecting to the payment's gateway.                   |
-+-------------------------+----------+------------------------------------------------------------------------------------+
 
 Example
 """""""
@@ -261,36 +250,26 @@ Example
     }
 
 
-Returns
-^^^^^^^
-
-+----------------------+----------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| name                 | type                       | description                                                                                                                              |
-+----------------------+----------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| ``gateway_response`` | ``dict`` or ``list[dict]`` | Dictionary or list of dictionaries containing details about every transaction, with ``is_success`` set to ``True`` if no error occurred. |
-+----------------------+----------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| ``client_token``     | ``str``                    | Unique client's token that will be used as his indentifier in the payment process.                                                       |
-+----------------------+----------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-Gateway response fields
+Gateway Response Fields
 """""""""""""""""""""""
 
-+----------------+-------------+--------------------------------------------------------------------------+
-| name           | type        | description                                                              |
-+----------------+-------------+--------------------------------------------------------------------------+
-| transaction_id | ``str``     | Transaction ID as returned by the gateway.                               |
-+----------------+-------------+--------------------------------------------------------------------------+
-| kind           | ``str``     | Transaction kind, one of: auth, capture, charge, refund, void.           |
-+----------------+-------------+--------------------------------------------------------------------------+
-| is_success     | ``bool``    | Status whether the transaction was successful or not.                    |
-+----------------+-------------+--------------------------------------------------------------------------+
-| amount         | ``Decimal`` | Amount that the gateway actually charged or authorized.                  |
-+----------------+-------------+--------------------------------------------------------------------------+
-| currency       | ``str``     | Currency in which the gateway charged, needs to be an ISO 4217 code.     |
-+----------------+-------------+--------------------------------------------------------------------------+
-| error          | ``str``     | An error message if one occured. Should be ``None`` if no error occured. |
-+----------------+-------------+--------------------------------------------------------------------------+
+.. table:: Gateway response fields
+
+   +----------------+-------------+--------------------------------------------------------------------------+
+   | name           | type        | description                                                              |
+   +----------------+-------------+--------------------------------------------------------------------------+
+   | transaction_id | ``str``     | Transaction ID as returned by the gateway.                               |
+   +----------------+-------------+--------------------------------------------------------------------------+
+   | kind           | ``str``     | Transaction kind, one of: auth, capture, charge, refund, void.           |
+   +----------------+-------------+--------------------------------------------------------------------------+
+   | is_success     | ``bool``    | Status whether the transaction was successful or not.                    |
+   +----------------+-------------+--------------------------------------------------------------------------+
+   | amount         | ``Decimal`` | Amount that the gateway actually charged or authorized.                  |
+   +----------------+-------------+--------------------------------------------------------------------------+
+   | currency       | ``str``     | Currency in which the gateway charged, needs to be an ISO 4217 code.     |
+   +----------------+-------------+--------------------------------------------------------------------------+ 
+   | error          | ``str``     | An error message if one occured. Should be ``None`` if no error occured. |
+   +----------------+-------------+--------------------------------------------------------------------------+
 
 Additional fields can be sent for logging/debug purposes. The only requirement is that they're serializable by
 ``DjangoJSONEncoder``. They will be saved in ``gateway_response`` field on Transaction model.
@@ -310,131 +289,3 @@ Example
         'error': None,
         'extra_field': 'additional information',
         'raw_response': raw_gateway_response_as_dict}
-
-
-Handling errors
----------------
-
-Gateway-specific errors should be parsed to Sellor's universal format.
-More on this can be found in :ref:`payments-architecture`.
-
-Adding payment method to the old checkout (optional)
-----------------------------------------------------
-
-If you are not using SPA Storefront, there are some additional steps you need
-to perform in order to enable the payment method in your checkout flow.
-
-Add a Form
-^^^^^^^^^^
-
-Payment on the storefront will be handled via payment form, it should
-implement all the steps necessary for the payment to succeed. The form
-must implement `get_payment_token` that returns a token required to process
-payments. All payment forms should inherit from ``django.forms.Form``.
-
-Your changes should live under
-``sellor.payment.gateways.<gateway name>.forms.py``
-
-Example
-"""""""
-
-.. code-block:: python
-
-    class BraintreePaymentForm(forms.Form):
-        amount = forms.DecimalField()
-        payment_method_nonce = forms.CharField()
-
-        def get_payment_token(self):
-            return self.cleaned_data['payment_method_nonce']
-
-Implement create_form(data, payment_information, connection_params)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Should return the form that will be used for the checkout process.
-
-.. note::
-    Should be added as a part of the provider's methods.
-
-Example
-"""""""
-
-    .. code-block:: python
-
-        def create_form(data, payment_information, connection_params):
-            return BraintreePaymentForm(
-                data, payment_information, connection_params)
-
-
-Implement TEMPLATE_PATH
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Should specify a path to a template that will be rendered for the checkout.
-
-Example
-"""""""
-
-    .. code-block:: python
-
-        TEMPLATE_PATH = 'order/payment/braintree.html'
-
-Add template
-^^^^^^^^^^^^
-
-Add a new template to handle the payment process with your payment form.
-Your changes should live under
-``sellor.templates.order.payment.<gateway name>.html``
-
-Adding new payment gateway to the settings
-------------------------------------------
-
-.. code-block:: python
-
-    PAYMENT_GATEWAYS = {
-        'braintree': {
-            'module': 'sellor.payment.gateways.braintree',
-            'connection_params': {
-                'sandbox_mode': get_bool_from_env('BRAINTREE_SANDBOX_MODE', True),
-                'merchant_id': os.environ.get('BRAINTREE_MERCHANT_ID'),
-                'public_key': os.environ.get('BRAINTREE_PUBLIC_KEY'),
-                'private_key': os.environ.get('BRAINTREE_PRIVATE_KEY')
-            }
-        }
-    }
-
-Please take a moment to consider the example settings above.
-
-- ``braintree``
-    Gateway's name, which will be used to identify the gateway
-    during the payment process.
-    It's stored in the ``Payment`` model under the ``gateway`` value.
-
-- ``module``
-    The path to the integration module
-    (assuming that your changes live within the
-    ``sellor.payment.gateways.braintree.__init__.py`` file)
-
-- ``connection_params``
-    List of parameters used for connecting to the payment's gateway.
-
-.. note::
-
-    All payment backends default to using sandbox mode.
-    This is very useful for development but make sure you use
-    production mode when deploying to a production server.
-
-Enabling new payment gateway
-----------------------------
-
-Last but not least, if you want to enable your payment gateway in the checkout
-process, add it's name to the ``CHECKOUT_PAYMENT_GATEWAYS`` setting.
-
-Tips
-----
-
-- Whenever possible, use ``currency`` and ``amount`` as **returned** by the
-  payment gateway, not the one that was sent to it. It might happen, that
-  gateway (eg. Braintree) is set to different currency than your shop is.
-  In such case, you might want to charge the customer 70 dollars, but due
-  to gateway misconfiguration, he will be charged 70 euros.
-  Such a situation should be handled, and adequate error should be thrown.
-
