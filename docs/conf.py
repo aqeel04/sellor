@@ -50,14 +50,15 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Online Shopping System'
+project = u'Ecommerce WebSite for Online Shopping'
 copyright = u'2019, Online Shopping System'
 author = u'Online Shopping System'
 
 # The short X.Y version.
 version = u'1.0.2'
 # The full version, including alpha/beta/rc tags.
-release = u'Online Shopping System'
+#release = u'Online Shopping System'
+release = ''
 
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
@@ -204,7 +205,8 @@ numfig = True
 latex_engine = 'pdflatex'
 latex_elements = {
     'papersize': 'a4paper',
-    'releasename':" ",
+    #'releasename':" ",
+    'releasename': ''
     # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup
     'fncychap': '\\usepackage[]{fncychap}',
     'fontspec': '\\usepackage{Times New Roman}',
