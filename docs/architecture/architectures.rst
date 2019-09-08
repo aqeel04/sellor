@@ -845,6 +845,7 @@ Login Page
 
 |
 |
+|
 
 .. figure:: ../img/login-page.png
 
@@ -859,6 +860,7 @@ Login Page
 Signup Page
 -----------
 
+|
 |
 |
 
