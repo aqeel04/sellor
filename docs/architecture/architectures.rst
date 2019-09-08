@@ -843,7 +843,36 @@ Home Page
 Login Page
 ----------
 
+|
+|
+
 .. figure:: ../img/login-page.png
 
    Login Page
    
+|
+|
+|
+|
+|
+
+Signup Page
+-----------
+
+|
+|
+
+.. figure:: ../img/signup-page.png
+
+   Signup Page
+   
+|
+|
+|
+|
+|
+
+Category Page
+-------------
+
+
