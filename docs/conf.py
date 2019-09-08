@@ -231,6 +231,10 @@ latex_elements = {
         \fancyhf{}
         
         \rhead{Overleaf}
+        \lhead{Online}
+        
+        \renewcommand{\headrulewidth}{2pt}
+        \renewcommand{\footrulewidth}{2pt}
         
         \usepackage{float}
         \usepackage{xcolor}
