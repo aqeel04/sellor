@@ -285,15 +285,15 @@ Sellor needs PostgreSQL version 9.4 or above to work. Use the `PostgreSQL downlo
 
 Some features like PDF creation require that additional system libraries are present.
 
-3.1 Redhat / Fedora
-~~~~~~~~~~~~~~~~~~~
+
+**3.1 Redhat / Fedora**
 
 .. code-block:: console
 
  $ sudo yum install redhat-rpm-config python-devel python-pip python-cffi libffi-devel cairo pango gdk-pixbuf2
 
-3.2 Debian / Ubuntu
-~~~~~~~~~~~~~~~~~~~
+
+**3.2 Debian / Ubuntu**
 
 Debian 9.0 Stretch or newer, Ubuntu 16.04 Xenial or newer:
 
@@ -301,15 +301,15 @@ Debian 9.0 Stretch or newer, Ubuntu 16.04 Xenial or newer:
 
  $ sudo apt-get install build-essential python3-dev python3-pip python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
 
-3.3 Archlinux
-~~~~~~~~~~~~~
+
+**3.3 Archlinux**
 
 .. code-block:: console
 
  $ sudo pacman -S python-pip cairo pango gdk-pixbuf2 libffi pkg-config
 
-3.4 Gentoo
-~~~~~~~~~~
+
+**3.4 Gentoo**
 
 .. code-block:: console
 
