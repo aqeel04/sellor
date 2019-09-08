@@ -827,8 +827,10 @@ Site Map
 Home Page
 ---------
 
+|
+|
+
 .. figure:: ../img/home-page.png
-   :scale: 120%
 
    Home Page
    
