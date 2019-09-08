@@ -58,7 +58,7 @@ author = u'Online Shopping System'
 version = u'1.0.2'
 # The full version, including alpha/beta/rc tags.
 #release = u'Online Shopping System'
-release = ''
+release = 'Online Shop'
 
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
@@ -206,7 +206,7 @@ latex_engine = 'pdflatex'
 latex_elements = {
     'papersize': 'a4paper',
     #'releasename':" ",
-    'releasename': ''
+    'releasename': '',
     # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup
     'fncychap': '\\usepackage[]{fncychap}',
     'fontspec': '\\usepackage{Times New Roman}',
