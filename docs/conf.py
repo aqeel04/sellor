@@ -205,8 +205,8 @@ numfig = True
 latex_engine = 'pdflatex'
 latex_elements = {
     'papersize': 'a4paper',
-    #'releasename':" ",
-    'releasename': '',
+    'releasename':"              ",
+    #'releasename': '',
     # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup
     'fncychap': '\\usepackage[]{fncychap}',
     'fontspec': '\\usepackage{Times New Roman}',
