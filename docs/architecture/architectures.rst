@@ -804,13 +804,11 @@ Use case diagram is a graphic depiction of the interactions among the elements o
 
    Use Case Diagram
 
-|
-|
 
 Class Diagrams
 ==============
 
-class diagram in the Unified Modeling Language (UML) is a type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects.
+Class diagram in the Unified Modeling Language (UML) is a type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations and relationships among objects.
 
 Product Class Diagram
 ---------------------
