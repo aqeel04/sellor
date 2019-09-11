@@ -697,10 +697,6 @@ The countries that you ship to are known as the shipping zones. Each ``ShippingZ
 
 Each ``ShippingZone`` can contain several countries inside, but the country might belong to a maximum of one ``ShippingZone``.
 
-Some examples of the ``ShippingZones`` could be `European Union`, `North America`, `Germany` etc.
-
-There's also a possibility to create a default Shipping Zone which will be used for countries not covered by other zones.
-
 
 Shipping Methods
 ----------------
@@ -749,7 +745,9 @@ Thanks to ``Sellor.site.context_processors.settings`` you can access *Site setti
 Activity Diagrams
 =================
 
-Activity diagram is used to describe the dynamic aspects of the system. It is basically a flowchart to represent the flow from one activity to another activity. The activity can be described as an operation of the system.This flow can be sequential, branched, or concurrent. Activity diagrams deal with all type of flow control by using different elements such as fork, join, etc.
+Activity diagram is used to describe the dynamic aspects of the system. It is basically a flowchart to represent the flow from one activity to another activity. The activity can be described as an operation of the system.
+
+The control flow is drawn from one operation to another. This flow can be sequential, branched, or concurrent. Activity diagrams deal with all type of flow control by using different elements such as fork, join, etc.
 
 
 Login Activity Diagram
