@@ -749,6 +749,10 @@ Thanks to ``Sellor.site.context_processors.settings`` you can access *Site setti
 Activity Diagrams
 =================
 
+Activity diagram is used to describe the dynamic aspects of the system. It is basically a flowchart to represent the flow from one activity to another activity. The activity can be described as an operation of the system.
+
+The control flow is drawn from one operation to another. This flow can be sequential, branched, or concurrent. Activity diagrams deal with all type of flow control by using different elements such as fork, join, etc.
+
 
 Login Activity Diagram
 -----------------------
