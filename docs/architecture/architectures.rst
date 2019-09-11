@@ -757,7 +757,6 @@ Login Activity Diagram
    
    Login Activity
 
-|
 
 Registration Activity Diagram
 -----------------------------
