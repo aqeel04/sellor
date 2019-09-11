@@ -231,7 +231,7 @@ latex_elements = {
         \fancyhf{}
         
         \renewcommand\headrule{}
-        \renewcommand\footerrule{}
+        \renewcommand\footrule{}
         
         \usepackage{float}
         \usepackage{xcolor}
