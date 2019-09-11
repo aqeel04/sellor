@@ -230,7 +230,8 @@ latex_elements = {
         \usepackage[T1]{fontenc} 
         \fancyhf{}
         
-        \renewcommand{\headrulewidth}{0pt}
+        \renewcommand\headrule{}
+        \renewcommand\footerrule{}
         
         \usepackage{float}
         \usepackage{xcolor}
