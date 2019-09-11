@@ -225,7 +225,7 @@ latex_elements = {
         %\usepackage{cleanthesis}
         \usepackage{fancyhdr}
         \usepackage[utf8]{inputenc}
-        \pagestyle{fancy}
+        \pagestyle{empty}
         \usepackage{mathptmx}
         \usepackage[T1]{fontenc} 
         \fancyhf[]{}
