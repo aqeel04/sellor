@@ -50,14 +50,14 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Ecommerce Website for Online Shopping'
-copyright = '2019, Ecommerce Website for Online Shopping'
+project = ''
+copyright = '2019,'
 author = 'Aqeel Chishti'
 
 # The short X.Y version.
 version = u'1.0.2'
 # The full version, including alpha/beta/rc tags.
-release = 'Ecommerce Website for Online Shopping'
+release = ''
 #release = 'Online Shop'
 
 # This is also used if you do content translation via gettext catalogs.
@@ -205,7 +205,7 @@ numfig = True
 latex_engine = 'pdflatex'
 latex_elements = {
     'papersize': 'a4paper',
-    'releasename':"              ",
+    'releasename':" ",
     #'releasename': '',
     # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup
     'fncychap': '\\usepackage[]{fncychap}',
@@ -228,7 +228,9 @@ latex_elements = {
         \pagestyle{empty}
         \usepackage{mathptmx}
         \usepackage[T1]{fontenc} 
-        \fancyhf[]{}
+        \fancyhf{}
+        
+        \renewcommand{\headrulewidth}{0pt}
         
         \usepackage{float}
         \usepackage{xcolor}
@@ -302,7 +304,7 @@ latex_elements = {
 }
 
 latex_documents = [
-   (master_doc, 'sellor.tex', '',
+   (master_doc, 'sellor.tex', ' ',
      'Aqeel Chishti', 'report')
 ]
 
