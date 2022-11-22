@@ -75,7 +75,7 @@ measurement==2.0.1
 mpmath==1.1.0
 oauthlib==2.1.0
 phonenumberslite==8.10.2
-pillow==5.4.1
+pillow==9.3.0
 prices==1.0.0
 promise==2.2.1
 psycopg2-binary==2.7.6.1
